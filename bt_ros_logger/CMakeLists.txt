@@ -19,7 +19,7 @@ find_package(std_msgs REQUIRED)
 #find_package(sensor_msgs REQUIRED)
 
 
-find_package(behaviortree_cpp REQUIRED)
+find_package(behaviortree_cpp_v3 REQUIRED)
 
 
 #find_package(tf2 REQUIRED)
@@ -70,7 +70,7 @@ ament_target_dependencies(${PROJECT_NAME}
     rclcpp
     #auction_msgs
     std_msgs
-    behaviortree_cpp
+    behaviortree_cpp_v3
     #geometry_msgs
     #nav_msgs
     #std_srvs

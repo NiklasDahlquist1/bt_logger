@@ -47,9 +47,9 @@ void ROS_logger::callback(Duration timestamp, const TreeNode& node,
   case BT::NodeStatus::IDLE:
     msg.prev_status = bt_msgs::msg::BtTransition::IDLE;
     break;
-  case BT::NodeStatus::SKIPPED:
-    msg.prev_status = bt_msgs::msg::BtTransition::SKIPPED;
-    break;
+  // case BT::NodeStatus::SKIPPED:
+  //   msg.prev_status = bt_msgs::msg::BtTransition::SKIPPED;
+  //   break;
   default:
     break;
   }
@@ -68,9 +68,9 @@ void ROS_logger::callback(Duration timestamp, const TreeNode& node,
   case BT::NodeStatus::IDLE:
     msg.status = bt_msgs::msg::BtTransition::IDLE;
     break;
-  case BT::NodeStatus::SKIPPED:
-    msg.status = bt_msgs::msg::BtTransition::SKIPPED;
-    break;
+  // case BT::NodeStatus::SKIPPED:
+  //   msg.status = bt_msgs::msg::BtTransition::SKIPPED;
+  //   break;
   default:
     break;
   }
